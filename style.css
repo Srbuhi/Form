@@ -1,0 +1,84 @@
+:root{
+    --main-color: #03506F;
+    --secondary-color: #0A043C;
+    --border-color: #466785f7;
+    --text-color: #eae8e8;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    transition: 0.4s;
+}
+
+body{
+    background-color: var(--main-color);
+    height: 100vh;
+    font-family: 'Russo One', sans-serif;
+    /*font-family: 'Original Surfer', cursive;*/
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 40%;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+
+._form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px 10px 15px 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+}
+ label{
+    line-height: 2.5;
+    font-size: 12px;
+}
+
+ h2{
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     font-size: 16px;
+     margin: 2em auto;
+     color: var(--text-color);
+ }
+
+.input-field{
+    width: 100%;
+    height: 23px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    outline: none;
+}
+
+#button{
+    margin-top: 10px;
+    height: 30px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+#button:hover{
+    background-color: var(--secondary-color);
+}
+.error{
+    color: red;
+    font-size: 11px;
+}
+
+
